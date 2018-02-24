@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8" />
+  <style>
+    body {
+      margin: 0px;
+    }
+
+    div#myMap {
+      width: 100%;
+      height: 640px;
+    }
+  </style>
+
+  <script type='text/javascript'>
+    var PushPins = [];
+    var map;
+
+    function GetMap()
+    {
+      map = new Microsoft.Maps.Map('#myMap', {
+        credentials: 'AkUBbVv8I2641LUvL8arNlBjvqv2Ya4d6CLciZEs0kXDW_6PSyxaiQrjT5XW3BMt',
+        center: new Microsoft.Maps.Location(51.1073299, 17.0596096),
+        // center: new Microsoft.Maps.Location(51.1003099, 17.0596096),
+        mapTypeId: Microsoft.Maps.MapTypeId.canvasLight,
+        showMapTypeSelector: false,
+        disableZooming: true,
+        showLocateMeButton: false,
+        allowHidingLabelsOfRoad: true,
+        labelOverlay: "hidden",
+        zoom: 15
+      });
+
+      for (var i = 0; i < 250; ++i) {
+        map.entities.push(newPin());
+      }
+
+      updatePins()
+    }
+
+    function rnd(x) {
+      return x + (Math.random()-0.5)/10;
+    }
+
+    function newPin() {
+      var c = map.getCenter();
+      var location = new Microsoft.Maps.Location(rnd(c.latitude), rnd(c.longitude))
+
+      return new Microsoft.Maps.Pushpin(location, {
+        color: "#82d1ff"
+      });
+    }
+    
+    function updatePins() {
+      map.entities.removeAt(0);
+      map.entities.push(newPin());
+
+      setTimeout(updatePins, 100)
+    }
+
+  </script>
+</head>
+<body>
+<div id="myMap"></div>
+
+<!-- Reference to the Bing Maps SDK -->
+<script type='text/javascript'
+        src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap'
+        async defer></script>
+</body>
+</html>
