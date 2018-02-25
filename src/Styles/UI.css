@@ -8,9 +8,10 @@ footer {
   background-color: #eeeeee;
   padding-top: 2em;
   padding-bottom: 2em;
+  margin-top: 1em;
   text-align: center; }
 
-iframe {
-  border: none; }
+div.jumbotron {
+  text-align: center; }
 
 /*# sourceMappingURL=UI.css.map */

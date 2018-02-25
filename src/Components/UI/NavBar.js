@@ -36,10 +36,10 @@ class NavBar extends Component {
 
   render () {
     return (
-      <I18n ns="landingpage">{(t, { i18n }) => (
+      <I18n ns="Landingpage">{(t, { i18n }) => (
         <div className="App">
           <Navbar expand="md">
-            <NavbarBrand tag={Link} to="/">{t("title")}</NavbarBrand>
+            <NavbarBrand tag={Link} to="/">{t("Title")}</NavbarBrand>
             <NavbarToggler onClick={this.toggle}>
               <img src={MenuImg} alt={t("Menu")}/>
             </NavbarToggler>
@@ -55,16 +55,16 @@ class NavBar extends Component {
 
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav caret>
-                    <img src={LanguageImg} alt={t("lang")} />
+                    <img src={LanguageImg} alt={t("Lang")} />
                   </DropdownToggle>
                   <DropdownMenu right>
 
                     <DropdownItem>
-                      <NavLink tag={Link} to="#" onClick={()=>{i18n.changeLanguage('en')}}>{t("en")}</NavLink>
+                      <NavLink tag={Link} to="#" onClick={()=>{i18n.changeLanguage('en')}}>{t("En")}</NavLink>
                     </DropdownItem>
 
                     <DropdownItem>
-                      <NavLink tag={Link} to="#" onClick={()=>{i18n.changeLanguage('pl')}}>{t("pl")}</NavLink>
+                      <NavLink tag={Link} to="#" onClick={()=>{i18n.changeLanguage('pl')}}>{t("Pl")}</NavLink>
                     </DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>

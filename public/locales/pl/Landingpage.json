@@ -1,9 +1,9 @@
 {
-  "title": "BeaconNet.IO",
+  "Title": "BeaconNet.IO",
 
-  "lang": "Język",
-  "en": "English",
-  "pl": "Polski",
+  "Lang": "Język",
+  "En": "English",
+  "Pl": "Polski",
 
   "Home": "Strona główna",
   "About": "O projekcie",

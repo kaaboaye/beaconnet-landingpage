@@ -11,8 +11,11 @@ i18n
     fallbackLng: 'en',
 
     // have a common namespace used around the full app
-    ns: ['landingpage'],
-    defaultNS: 'landingpage',
+    ns: [
+      'Landingpage',
+      'About'
+    ],
+    defaultNS: 'Landingpage',
 
     debug: true,
 
