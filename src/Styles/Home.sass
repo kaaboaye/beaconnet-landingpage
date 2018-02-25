@@ -1,9 +1,23 @@
 div#Home
+  video
+    z-index: -100
+    position: fixed
+    top: 50%
+    left: 50%
 
-  div.jumbotron
-    margin-bottom: 0
+    width: auto
+    height: auto
 
+    min:
+      width: 100%
+      height: 100%
 
-  iframe
-    border: none
-    margin: 0
+    -webkit-transform: translateX(-50%) translateY(-50%)
+    transform: translateX(-50%) translateY(-50%)
+
+  div.card
+    background-color: rgba(255, 255, 255, 0.7)
+    text-align: center
+
+    margin:
+      top: 2em

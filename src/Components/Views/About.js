@@ -7,11 +7,13 @@ import P2 from '../../Images/TMP-P2.jpg'
 import P3 from '../../Images/TMP-P3.jpg'
 import P4 from '../../Images/TMP-P4.jpg'
 
+import '../../Styles/About.css'
+
 class About extends Component {
   render() {
     return (
       <I18n ns="About">{(t, { i18n }) => (
-        <div>
+        <div id="About">
           <Jumbotron>
             <h1 className="display-3">{t("Landingpage:About")}</h1>
             <p className="lead">
