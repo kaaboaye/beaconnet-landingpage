@@ -5,12 +5,13 @@ div#Home video {
 div#Home div.card {
   text-align: center;
   border: none; }
-div#Home div.card#Header {
-  background-color: rgba(255, 255, 255, 0);
-  height: 20em;
+div#Home div#Header {
+  text-align: center;
   color: blue;
-  margin-top: 2em; }
-  div#Home div.card#Header h1 {
+  margin-top: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em; }
+  div#Home div#Header h1 {
     width: 100%;
     font-size: 9vw; }
 div#Home div.Content {
