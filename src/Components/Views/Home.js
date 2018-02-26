@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { I18n } from 'react-i18next'
 
 import { Container, Row, Col,
-  Card, CardText, CardBody, CardTitle } from 'reactstrap'
+  Card, CardBody, CardTitle, CardText } from 'reactstrap'
 
 import '../../Styles/Home.css'
 import Video from '../../Images/TMP-VIDEO.mp4'
@@ -20,15 +20,30 @@ class Home extends Component {
         <Container>
           <Row>
             <Col>
-              <Card>
+              <Card id="Header">
                 <CardBody>
                   <CardTitle tag="h1">{t("Title")}</CardTitle>
-                  <CardText>{t("About:Content")}</CardText>
                 </CardBody>
               </Card>
             </Col>
           </Row>
         </Container>
+
+        <div className="Content">
+
+
+          <Container>
+            <Row>
+              <Col>
+                <Card>
+                  <CardBody>
+                    <CardText>{t("About:Content")}</CardText>
+                  </CardBody>
+                </Card>
+              </Col>
+            </Row>
+          </Container>
+        </div>
       </div>
       )}</I18n>
     )
