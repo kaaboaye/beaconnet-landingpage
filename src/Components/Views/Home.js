@@ -22,7 +22,7 @@ class Home extends Component {
             <Col>
               <Card id="Header">
                 <CardBody>
-                  <CardTitle tag="h1">{t("Title")}</CardTitle>
+                  <CardTitle className="text-primary" tag="h1">{t("Title")}</CardTitle>
                 </CardBody>
               </Card>
             </Col>
@@ -30,14 +30,12 @@ class Home extends Component {
         </Container>
 
         <div className="Content">
-
-
           <Container>
             <Row>
               <Col>
                 <Card>
                   <CardBody>
-                    <CardText>{t("About:Content")}</CardText>
+                    <CardText>{t("About:Content")}{t("About:Content")}{t("About:Content")}{t("About:Content")}{t("About:Content")}</CardText>
                   </CardBody>
                 </Card>
               </Col>
