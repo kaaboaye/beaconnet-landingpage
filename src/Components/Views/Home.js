@@ -5,8 +5,8 @@ import { Container, Row, Col,
   Card, CardBody, CardTitle, CardText } from 'reactstrap'
 
 import '../../Styles/Home.css'
-import Video from '../../Images/TMP-VIDEO.mp4'
-import Poster from '../../Images/TMP-bingmap.png'
+import Video from '../../Images/MapVideo.mp4'
+import Poster from '../../Images/MapPoster.jpg'
 
 class Home extends Component {
   render() {
