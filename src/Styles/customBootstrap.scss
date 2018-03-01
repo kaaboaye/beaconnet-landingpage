@@ -5,7 +5,7 @@
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 //
 // Color system
 //
@@ -63,9 +63,18 @@ $colors: map-merge((
   "gray":       $gray-600,
   "gray-dark":  $gray-800
 ), $colors);
+//
+//$primary:       $blue !default;
+//$secondary:     $gray-600 !default;
+//$success:       $green !default;
+//$info:          $cyan !default;
+//$warning:       $yellow !default;
+//$danger:        $red !default;
+//$light:         $gray-100 !default;
+//$dark:          $gray-800 !default;
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #2196F3 !default;
+$secondary:     #212121 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -228,7 +237,7 @@ $transition-collapse:         height .35s ease !default;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-sans-serif:      'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
@@ -652,7 +661,7 @@ $pagination-disabled-border-color:  $gray-300 !default;
 // Jumbotron
 
 $jumbotron-padding:                 2rem !default;
-$jumbotron-bg:                      $gray-200 !default;
+$jumbotron-bg:                      #ffffff !default;
 
 
 // Cards

@@ -17,7 +17,7 @@ class Home extends Component {
           <source src={Video} type="video/mp4"/>
         </video>
 
-        <div id="Header">
+        <div id="Header" className="Shadow">
           <h1>{t("Title")}</h1>
         </div>
 
@@ -27,7 +27,14 @@ class Home extends Component {
               <Col>
                 <Card>
                   <CardBody>
-                    <CardText>{t("About:Content")}{t("About:Content")}{t("About:Content")}{t("About:Content")}{t("About:Content")}</CardText>
+                    <CardText>
+                      <h1>{t("About:Header")}</h1>
+                      <p>{t("About:Content")}</p>
+                      <h1>{t("About:Header")}</h1>
+                      <p>{t("About:Content")}</p>
+                      <h1>{t("About:Header")}</h1>
+                      <p>{t("About:Content")}</p>
+                    </CardText>
                   </CardBody>
                 </Card>
               </Col>
